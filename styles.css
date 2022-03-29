@@ -1,0 +1,156 @@
+body {
+	background-color: hsl(210, 46%, 95%);
+	margin: 0px;
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	font-family: "Barlow Semi Condensed", sans-serif;
+	font-size: 13px;
+}
+
+#user-img {
+	border-radius: 50%;
+	max-width: 100%;
+	height: auto;
+	margin-right: 15px;
+}
+
+img {
+	width: 40px;
+}
+
+p {
+	margin: 0px;
+}
+
+header {
+	display: flex;
+}
+
+.opaque-text {
+	opacity: 60%;
+}
+
+#user-info {
+	margin: auto 0px;
+}
+
+.first-paragraph {
+	margin: 10px 0;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+.second-paragraph {
+	font-size: 0.9em;
+	font-weight: 300;
+}
+
+main {
+	display: grid;
+	width: 85%;
+	max-width: 900px;
+
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr auto;
+	grid-gap: 1em;
+	/*height: 75%;
+				min-height: 500px;*/
+}
+
+.test1 {
+	background-color: hsl(263, 55%, 52%);
+	grid-column: 1/3;
+	border-radius: 10px;
+	padding: 1.7em;
+	color: hsl(0, 0%, 100%);
+}
+
+.test2 {
+	background-color: hsl(217, 19%, 35%);
+	border-radius: 10px;
+	padding: 1.7em;
+	color: hsl(0, 0%, 100%);
+}
+
+.test3 {
+	background-color: hsl(0, 0%, 100%);
+	grid-column: 4/5;
+	grid-row: 1/3;
+	border-radius: 10px;
+	padding: 1.7em;
+	color: hsl(219, 29%, 14%);
+}
+
+.test4 {
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 10px;
+	padding: 2em;
+	color: hsl(219, 29%, 14%);
+}
+
+.test5 {
+	background-color: hsl(219, 29%, 14%);
+	grid-column: 2/4;
+	border-radius: 10px;
+	padding: 1.7em;
+	color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 1020px) {
+	main {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, auto);
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	.test2 {
+		grid-column: 3/4;
+	}
+	.test3 {
+		grid-column: 1/4;
+		grid-row: 3/4;
+	}
+	.test4 {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	.test5 {
+		grid-column: 2/4;
+	}
+	header {
+		font-size: 0.9em;
+	}
+	img {
+		width: 25px;
+	}
+	.first-paragraph {
+		font-size: 1em;
+	}
+	.second-paragraph {
+		font-size: 0.9em;
+	}
+}
+
+@media (max-width: 700px) {
+	main {
+		display: flex;
+		flex-direction: column;
+		width: 60%;
+		max-width: 300px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	.first-paragraph {
+		font-weight: 300;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: hsl(217, 19%, 35%);
+}
